@@ -1,0 +1,55 @@
+.footer {
+    .footer__part {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &.--part-1 {
+            background-color: rgb(249, 249, 249);
+        }
+
+        &.--part-2 {
+            background-color: rgb(231, 231, 231);
+        }
+
+        .container {
+            display: flex;
+
+            .footer__item {
+                flex-basis: calc(100%/3);
+
+                &.--border {
+                    border: solid rgb(219, 219, 219);
+                    border-width: 0 2px 0 2px;
+                }
+
+                h2 {
+                    @include text($text-20, $text-bold, $text-primary);
+                    margin-bottom: 10px;
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            @include text();
+                        }
+                    }
+                }
+
+                p {
+                    @include text();
+                }
+
+                &>a {
+                    @include text($color: rgb(200, 80, 79));
+                }
+            }
+        }
+    }
+}

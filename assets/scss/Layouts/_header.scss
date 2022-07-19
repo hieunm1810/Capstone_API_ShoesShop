@@ -1,0 +1,45 @@
+.header {
+    padding: 10px 0;
+    background-color: $bg-black;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__brand {
+            a {
+                img {}
+            }
+        }
+
+        .header__component {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .header__component-cart {
+                display: flex;
+                align-items: center;
+                a {
+                    img {}
+                }
+
+                span {
+                    cursor: default;
+                    @include text($text-30, $text-light, $text-c1-white);
+                }
+            }
+
+            %login-register-text {
+                text-decoration: none;
+                @include text($text-16, $text-light, $text-c2-white);
+            }
+
+            a:nth-child(2) { 
+                @extend %login-register-text;
+            }
+
+            a:nth-child(3) {
+                @extend %login-register-text;
+            }
+        }
+    }
+}
