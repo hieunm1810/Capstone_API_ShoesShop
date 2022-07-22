@@ -41,7 +41,74 @@
         </div>
     </section>
     <!-- Content -->
-    <section style="height:400px"></section>
+    <section class="content">
+        <div class="container">
+            <h1>Register</h1>
+            <div class="content__form">
+                <div class="form__wrap me-5 mb-5">
+                    <div class="form-group --required">
+                        <input type="text" class="form-control" placeholder="email" id="txtEmail" required>
+                    </div>
+                    <span class="content__form-warning" id="chkEmail"></span>
+                </div>
+                <div class="form__wrap">
+                    <div class="form-group --required">
+                        <input type="text" class="form-control" placeholder="name" id="txtName" required>
+                    </div>
+                    <span class="content__form-warning" id="chkName"></span>
+                </div>
+                <div class="form__wrap me-5 mb-5">
+                    <div class="form-group --required">
+                        <input type="password" class="form-control" placeholder="password" id="txtPassword" required>
+                    </div>
+                    <span class="content__form-warning" id="chkPassword"></span>
+                </div>
+                <div class="form__wrap">
+                    <div class="form-group --required">
+                        <input type="text" class="form-control" placeholder="phone" id="txtPhone" required>
+                    </div>
+                    <span class="content__form-warning" id="chkPhone"></span>
+                </div>
+                <div class="form__wrap me-5 mb-5">
+                    <div class="form-group --required">
+                        <input type="password" class="form-control" placeholder="password confirm" id="txtConfirm" required>
+                    </div>
+                    <span class="content__form-warning" id="chkConfirm"></span>
+                </div>
+                <div class="form__wrap">
+                    <div class="form-group">
+                        <span>Gender</span>
+                        <div class="form-check">
+                            <div class="content__radio-overlay">
+                                <input class="form-check-input" type="radio" name="rdGender" id="rdGender1" value="true">
+                                <span class="content__radio-circle"></span>
+                            </div>
+                            <label class="form-check-label" for="rdGender1">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <div class="content__radio-overlay">
+                                <input class="form-check-input" type="radio" name="rdGender" id="rdGender2" value="false" checked>
+                                <span class="content__radio-circle"></span>
+                            </div>
+                            <label class="form-check-label" for="rdGender2">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__wrap me-5">
+                    <div class="form-group"></div>
+                </div>
+                <div class="form__wrap">
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="btnSignUp">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -96,6 +163,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./model/User.js"></script>
+    <script src="./utils/validation.js"></script>
+    <script src="./controllers/register.js"></script>
 </body>
 
 </html>
