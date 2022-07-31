@@ -1,6 +1,6 @@
 .footer {
     .footer__part {
-        height: 200px;
+        height: 141px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -15,9 +15,10 @@
 
         .container {
             display: flex;
-
             .footer__item {
-                flex-basis: calc(100%/3);
+                
+                flex-basis: calc(100%/3);  
+                padding-left: 50px;
 
                 &.--border {
                     border: solid rgb(219, 219, 219);
@@ -25,8 +26,10 @@
                 }
 
                 h2 {
-                    @include text($text-20, $text-bold, $text-primary);
-                    margin-bottom: 10px;
+                    @include text($text-15, $text-bold, $text-primary);
+                    margin-bottom: 5px;
+                    padding-top: 10px;
+
                 }
 
                 ul {

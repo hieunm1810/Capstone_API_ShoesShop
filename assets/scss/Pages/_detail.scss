@@ -1,0 +1,137 @@
+
+
+
+
+.Info_giay {
+  display: flex;
+
+  .Info_giay_left {
+    .Info_giay_img {
+       padding-top:58px;
+      padding-left:65px;
+      .Info_giay_img_hinhanh {
+       
+      }
+    }
+  }
+
+  .Info_giay_right {
+    padding-left: 137px;
+    padding-top: 58px;
+
+    //   .giay_title {}
+
+    // .giay_lorem {}
+
+    .giay_availbe {
+      color:
+        #1ED90E;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .giay_size {
+      display: flex;
+      margin-left: -10px;
+
+      .giay_size_1 {
+        margin: 0px 10px;
+        padding: 0 10px;
+        background-color: gray;
+      }
+    }
+
+    .giay_span {
+      font-weight: 700;
+      font-size: 30px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .button {
+       display: flex;
+      .plus {
+        background-color: gray;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        background-color: #7C97F5;
+        color: white;
+        font-size: 30px;
+        border: none;
+      }
+
+      .minus {
+        background-color: gray;
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        background-image: linear-gradient(270deg, #6181F3 100%,#7C97F5 100%);
+        color: white;
+        font-size: 30px;
+        border: none;
+      }
+      .value {
+        font-weight: 400;
+        font-size: 30px;
+        padding: 0 10px;
+        border: none;
+      }
+    }
+    .button_down {
+      margin-top: 5px;
+      width: 175px;
+      height: 64px;
+      color: white;
+      border: none;
+      background-image: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+    }
+  }
+}
+
+
+
+
+// phan 4 
+.p4-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -17px;
+
+  .p4-footer_buynow {
+    position: relative;
+    background-color: #E1B067;
+    width: 175px;
+    height: 64px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    .buynow {
+      position: absolute;
+      left: 33px;
+      top: 15px;
+    }
+  }
+
+  .p4-footer_price {
+    position: relative;
+    background-color: #DEDDDC;
+    width: 175px;
+    height: 64px;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    .price {
+      position: absolute;
+      left: 40px;
+      top: 15px;
+    }
+
+  }
+}
+
+.body-detail {
+  max-width: 1280px;
+  margin-left: 125px;
+}
