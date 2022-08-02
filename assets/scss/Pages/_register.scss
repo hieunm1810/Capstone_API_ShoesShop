@@ -15,7 +15,7 @@
             @include text($size: $text-30);
 
             .form__wrap {
-                flex-basis: calc(100%/3);
+                flex-basis: calc(100%/2.7);
 
                 .form-group {
                     display: flex;
@@ -38,7 +38,7 @@
 
                     .form-control {
                         height: 50px;
-                        @include text($size: $text-30);
+                        @include text($size: $text-24);
                         padding-left: 0;
                         border: solid $border-input;
                         border-width: 0 0 5px 0;

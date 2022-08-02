@@ -1,6 +1,6 @@
 .footer {
     .footer__part {
-        height: 200px;
+        height: 141px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,7 +16,12 @@
         .container {
             display: flex;
 
+            & .footer__item:nth-child(1) {
+                padding-left: 50px;
+            }
+
             .footer__item {
+
                 flex-basis: calc(100%/3);
 
                 &.--border {
@@ -25,8 +30,10 @@
                 }
 
                 h2 {
-                    @include text($text-20, $text-bold, $text-primary);
-                    margin-bottom: 10px;
+                    @include text($text-15, $text-bold, $text-primary);
+                    margin-bottom: 5px;
+                    padding-top: 10px;
+
                 }
 
                 ul {
@@ -35,19 +42,21 @@
 
                     li {
                         list-style: none;
+                        line-height: 20px;
 
                         a {
-                            @include text();
+                            @include text($size: 12px);
                         }
                     }
                 }
 
                 p {
-                    @include text();
+                    @include text($size: 12px);
+                    margin-bottom: 4px;
                 }
 
                 &>a {
-                    @include text($color: rgb(200, 80, 79));
+                    @include text($size: 12px, $color: rgb(200, 80, 79));
                 }
             }
         }
