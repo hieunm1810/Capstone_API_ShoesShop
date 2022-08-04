@@ -79,6 +79,7 @@
 
 .product__feature {
     .container {
+        max-width: 1140px;
         h1 {
             text-align: center;
             @include text($size: $text-40);
@@ -88,6 +89,9 @@
 
         .row {
             .col-4 {
+                padding-left: 23px;
+                padding-right: 23px;
+                padding-bottom: 49px;
                 .card {
                     background-color: $bg-card;
                     padding-top: 45px;
@@ -102,7 +106,7 @@
                         padding-bottom: 13px;
 
                         h5 {
-                            @include text($size: 23px, $weight: $text-light);
+                            @include text($size: 22px, $weight: $text-light);
                             margin-bottom: 8px;
                         }
 
