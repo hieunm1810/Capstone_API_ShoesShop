@@ -41,7 +41,7 @@ function renderDescription(data) {
 
 
 function renderImg(data) {
-    var html = ` <img style ="width:335px ; height:355px; background-color: #F8F8F8;" class="image" src="${data.image}" alt="">`;
+    var html = ` <img style ="width:335px ; height:355px; background-color: #F8F8F8;padding:30px" class="image" src="${data.image}" alt="">`;
 
     document.querySelector('.Info_giay_img').innerHTML = html;
 
@@ -92,20 +92,20 @@ function getProductGoiY() {
 function renderImg_anh(data) {
     html = '';
     for (var i = 0; i < data.length; i++) {
-        var abc = data[i];
+        var product_Img = data[i];
 
         html += ` <div class="col">
                <div style="width:335px"  class="card">
-                  <img style ="width:335px ; height:355px; background-color: #F8F8F8;" class="image" src="${abc.image}" alt="">
+                  <img style ="width:335px ; height:355px; background-color: #F8F8F8;padding:30px" class="image" src="${product_Img.image}" alt="">
                   <div class="card-body">
-                    <h5 style="font-weight: 300 ;" class="card-title">${abc.name}</h5>
-                    <p style = "height:70px" class="card_mota">${abc.shortDescription}</p> 
+                    <h5 style="font-weight: 300 ;" class="card-title">${product_Img.name}</h5>
+                    <p style = "color:gray" class="card_mota">${product_Img.alias}</p> 
                      <div class="p4-footer">
                         <div style="font-weight:200 ; font-size:24px" class="p4-footer_buynow">
                           <div class= "buynow">Buy Now</div>
                         </div>
                         <div style="font-weight:600 ; font-size:24px" class="p4-footer_price">
-                        <div class= "price">${abc.price}$</div>
+                        <div class= "price">${product_Img.price}$</div>
                         </div>
                      </div>
                    </div>
@@ -114,7 +114,7 @@ function renderImg_anh(data) {
 
 `;
     }
-    console.log(abc)
+    console.log(product_Img)
     document.querySelector('.anh').innerHTML = html
 
 }
